@@ -1,5 +1,5 @@
 {
-  "name": "@felipecassiors/semantic-release-vagrant-test",
+  "name": "semantic-release-vagrant-test",
   "version": "1.0.0",
   "description": "",
   "repository": {
@@ -14,11 +14,17 @@
   "homepage": "https://github.com/felipecassiors/semantic-release-vagrant-test#readme",
   "devDependencies": {
     "semantic-release": "^17.0.2",
-    "semantic-release-vagrant": "^1.0.0"
+    "semantic-release-vagrant": "^1.0.1-0"
   },
   "release": {
     "plugins": [
-      "semantic-release-vagrant"
+      [
+        "semantic-release-vagrant",
+        {
+          "organization": "felipecassiors",
+          "boxName": "semantic-release-vagrant-test"
+        }
+      ]
     ]
   }
 }
