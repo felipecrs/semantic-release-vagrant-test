@@ -19,11 +19,11 @@ script:
 
 before_deploy:
   - nvm install lts/*
-  - npm install -g semantic-release-vagrant@beta
+  - npm install -g semantic-release semantic-release-vagrant@beta
 
 deploy:
   provider: script
   skip_cleanup: true
-  script: npx semantic-release
+  script: semantic-release
   on:
     all_branches: true
