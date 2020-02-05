@@ -1,11 +1,14 @@
 {
   "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
     [
       "semantic-release-vagrant",
       {
         "organization": "felipecassiors",
         "boxName": "semantic-release-vagrant-test"
       }
-    ]
+    ],
+    "@semantic-release/github"
   ]
 }
